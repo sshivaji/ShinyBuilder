@@ -44,10 +44,10 @@ updateDashboards <- function(dashboards = NULL){
             message("Dashboard threw an error updating:")
             message(cond)
           }
-          warning=function(cond) {
-            message("Dashboard threw a warning updating:")
-            message(cond)
-          }
+         # warning=function(cond) {
+          #  message("Dashboard threw a warning updating:")
+          #  message(cond)
+          #}
         )
 #dashboard_state[[i]]$data <- do.call(db_obj$query_fn, list(db_obj$db, input_query))
       }
